@@ -36,7 +36,7 @@ def jump():
     pass
 def hit():
     for i in range(5):
-        for frame in range(3):
+        for frame in range(4):
             clear_canvas()
             character.clip_draw(20+frame * 80, y_cange(465), 60,60, 400, 300,200,200)
             update_canvas()
