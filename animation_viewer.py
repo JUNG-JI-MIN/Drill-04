@@ -38,25 +38,20 @@ def hit():
     for i in range(5):
         for frame in range(3):
             clear_canvas()
-            character.clip_draw(20+frame * 80, y_cange(465), 60,60, 400, 300,300,300)
+            character.clip_draw(20+frame * 80, y_cange(465), 60,60, 400, 300,200,200)
             update_canvas()
             delay(0.1)
         clear_canvas()
-        character.clip_draw(250, y_cange(465), 60, 70, 400, 300, 310, 350)
+        character.clip_draw(250, y_cange(465), 60, 70, 400, 300, 210, 250)
         update_canvas()
         delay(0.1) # 도끼 위로 올리는거
         clear_canvas()
-        character.clip_draw(320, y_cange(465), 100, 70, 400, 300, 310, 350)
+        character.clip_draw(320, y_cange(465), 150, 70, 600, 300, 600, 250)
         update_canvas()
         delay(0.1) # 도끼 던지는거
     delay(1.0)
     pass
 
-while True:
-    hit()
-    work()
-    run()
-    jump()
-    hit()
+hit()
 
 close_canvas()
