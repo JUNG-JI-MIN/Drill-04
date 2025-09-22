@@ -44,7 +44,11 @@ def hit():
         clear_canvas()
         character.clip_draw(250, y_cange(465), 60, 70, 400, 300, 310, 350)
         update_canvas()
-        delay(0.1)
+        delay(0.1) # 도끼 위로 올리는거
+        clear_canvas()
+        character.clip_draw(320, y_cange(465), 100, 70, 400, 300, 310, 350)
+        update_canvas()
+        delay(0.1) # 도끼 던지는거
     delay(1.0)
     pass
 
