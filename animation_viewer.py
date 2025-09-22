@@ -6,6 +6,13 @@ open_canvas()
 character = load_image('animation.png')
 
 def work():
+    for i in range(5):
+        for frame in range(6):
+            clear_canvas()
+            character.clip_draw(20+frame * 75, y_cange(240), 70,60, 400, 300,200,200)
+            update_canvas()
+            delay(0.1)
+    delay(1.0)
     pass
 def run():
     for i in range(5):
