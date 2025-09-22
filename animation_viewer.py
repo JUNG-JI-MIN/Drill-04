@@ -51,7 +51,10 @@ def hit():
         delay(0.1) # 도끼 던지는거
     delay(1.0)
     pass
-
-hit()
+while True:
+    hit()
+    work()
+    run()
+    jump()
 
 close_canvas()
